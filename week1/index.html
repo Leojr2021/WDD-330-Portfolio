@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>week1</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top_container">
+        <h1>Week 1 Notes</h1>
+        <div class="homebutton">
+          <a href="../index.html">Home</a>
+        </div>
+      </div>
+
+      <h2>Storage</h2>
+
+      <img class="storage_img" src="./assets/storage.png" alt="" />
+
+      <h3>Local Storage</h3>
+
+      <ol>
+        <ul>
+          localStorage.setItem()
+        </ul>
+        <ul>
+          localStorage.getItem()
+        </ul>
+      </ol>
+
+      <h3>Session Storage</h3>
+      <ol>
+        <ul>
+          sessionStorage.setItem()
+        </ul>
+        <ul>
+          sessionStorage.getItem()
+        </ul>
+      </ol>
+
+      <h3>Cookie</h3>
+      <img src="./assets/cookie.png" alt="" />
+
+      <h2>Equality comparisons</h2>
+      <h3>Double equals (==)</h3>
+      <p>
+        Double equals (==) will perform a type conversion when comparing two
+        things, and will handle NaN, -0, and +0 specially to conform to IEEE 754
+        (so NaN != NaN, and -0 == +0);
+      </p>
+      <h3>triple equals (===)</h3>
+      <p>
+        triple equals (===) will do the same comparison as double equals
+        (including the special handling for NaN, -0, and +0) but without type
+        conversion; if the types differ, false is returned.
+      </p>
+      <img src="./assets/img.png" alt="" />
+    </div>
+  </body>
 </html>
