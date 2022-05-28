@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list app</title>
+    <link rel="stylesheet" href="./todo.css" />
+</head>
+<body>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="intro">
+                    <h1>To Do list</h1>
+                  
+                </div>
+            </div>
+   
+    
+            <div class="row">
+                <div class="">
+                    <input id="userInput" type="text" placeholder="New item..." maxlength="27">
+                    <button id="enter">Enter</button>
+                </div>
+            </div>
+            
+            <div class="filter__buttons">
+                <button class="buttonClass" onclick={handleComplete()}> Completed</button>
+                <button class="buttonClass" onclick={handlePending()}>Pending</button>
+                <button class="buttonClass" onclick={handleAll()}>All</button>
+            </div>
+    
+            <!-- Empty List -->
+            <div class="row">
+                <div class="listItems">
+                    <ul class="ulList">
+                    </ul>
+                </div>
+            </div>
+    
+        </div>
+       
+    </body>
+    </html>
+    <script src="./todo.js"></script>
+</body>
+</html>
