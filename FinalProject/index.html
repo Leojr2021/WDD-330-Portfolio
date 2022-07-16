@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pokedex</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="left_nav">
+            <img src="./images/pokeball.png" alt="pokeball">
+            <h2>Pokédex</h2>
+        </div>
+        <div class="searchbar_container">
+            <div class="searchbar">
+        
+              <input id="search_bar" placeholder="Search your pokemon"type="text" />
+             
+            
+      
+                <button onclick=search() id="inputButton">
+                 <img src="/images/lupa.png" alt="">
+                </button>
+             
+
+            </div>
+          </div>
+        <div class="right_nav">
+            <!-- <h2>ADD POKEMON</h2> -->
+            <a href="./create.html">ADD POKEMON</a>
+        </div>
+
+        
+
+    </nav>
+    <main>
+
+      <div class="filter_container">
+
+        <div class="filter">
+  
+        <div>
+          <!-- <div>Types</div> -->
+          <select id="handleFilter" class="homeSelect" onchange=handleFilter()>
+            <option value="Sort by type" selected disabled>Sort by type</option>
+            <option value="normal">Normal</option>
+            <option value="fighting">fighting</option>
+            <option value="flying">flying</option>
+            <option value="poison">poison</option>
+            <option value="ground">ground</option>
+            <option value="rock">rock</option>
+            <option value="bug">bug</option>
+            <option value="ghost">ghost</option>
+            <option value="steel">steel</option>
+            <option value="fire">fire</option>
+            <option value="water">water</option>
+            <option value="grass">grass</option>
+            <option value="electric">electric</option>
+            <option value="psychic">psychic</option>
+            <option value="ice">ice</option>
+            <option value="dragon">dragon</option>
+            
+            <option value="fairy">fairy</option>
+            
+            
+
+          </select>
+        </div>
+     
+        <div>
+          <!-- <div>Order Name</div> -->
+          <select id="handleOrderName" class="homeSelect" onchange=handleOrderName()>
+            <option  value="Order by Name" disabled selected>Order by Name</option>
+            <option  value="asc_name">Alphabetically (A-Z)</option>
+            <option  value="desc_name">Alphabetically (Z-A)</option>
+           
+          </select>
+        </div>
+  
+        <div>
+          <!-- <div>Attack</div> -->
+          <select id="handleOrderAttack" class="homeSelect" onchange=handleOrderAttack()>
+
+            
+            <option  value="Order by Attack" disabled selected>Order by Attack</option>
+            <option value="asc_rating">Attack (Lower-Higher)</option>
+            <option value="desc_rating">Attack (Higher-Lower)</option>
+          </select>
+        </div>
+  
+        <div>
+          <!-- <div>Source</div> -->
+          <select id="handleCreator" class="homeSelect" onchange=handleCreator() >
+            <option  value="Filter by Origin" disabled selected >Filter by Origin</option>
+            <option value="api">Api pokemon</option>
+            <option value="user">User pokemon</option>
+            
+            
+          </select>
+        </div>
+
+        <button class="clearButton"type="button" onclick=clearFilter()>Clear</button>
+        </div>
+      </div>
+
+      <p id="demo"></p>
+
+
+        <div id="pokemons_container">
+            
+
+        </div>
+    </main>
+  
+    <footer>
+
+        © <span id="year">2022</span> | Attributions | Leo Meza
+        Mancilla
+    </p>
+
+    </footer>
+
+
+    
+    <script  src="/js/app.js"></script>
+
+
+
+
+</body>
+</html>

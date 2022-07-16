@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/create.css">
+    <title>Pokedex</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <div class="backButton_container">
+
+        <a class="" href="/index.html"><button class="PokemonCreateForm_topButton">BACK TO HOME</button></a>
+    </div>
+   
+
+    <div class="create_container_out">
+        <div class="create_container">
+            <h1>Add your Videogame</h1>
+            <form
+                id="survey-form"
+                class="form"
+                noValidate
+                
+                
+            >
+                <div class="top_side">
+                <div class="left_side">
+                    
+                        <div class="attack_form ">
+                            <label>Name: </label>
+                            <input
+                            class="label"
+                            type="text"
+                            name="name"
+                           
+                            required
+                            
+                            ></input>
+                        </div>
+                        
+                        <div class="attack_form ">
+                            <label>Attack: </label>
+                            <input
+                            class="label"
+                            type="text"
+                            name="attack"
+                           
+                            required
+                            
+                            ></input>
+                        </div>
+                       
+                        <div class="attack_form ">
+                            <label>HP: </label>
+                            <input
+                            class="label"
+                            type="text"
+                            name="hp"
+                           
+                            required
+                            
+                            ></input>
+                        </div>
+                       
+    
+                </div>
+                    <div class="checkboxs_right">
+                    <h2>Types</h2>
+                        <div class="checks">
+                            
+                            <div class="checkbox_genres">
+                                <div class="checkbox_genres_left">
+
+                                    <label><input type="checkbox" name="types" value="Normal" > Normal</label><br>
+
+                                     <label><input type="checkbox" name="types" value="fighting" > fighting</label><br>
+
+                                    <label><input type="checkbox" name="types" value="flying"> flying</label>  <br>          
+                                    <label><input type="checkbox" name="types" value="poison"> poison</label><br>
+
+                                     <label><input type="checkbox" name="types" value="ground"> ground</label><br>
+
+                                    <label><input type="checkbox" name="types" value="rock"> rock</label>    <br>        
+                                    <label><input type="checkbox" name="types" value="electric"> electric</label><br>
+
+                                     <label><input type="checkbox" name="types" value="psychic"> psychic</label><br>
+
+                                    <label><input type="checkbox" name="types" value="ice"> ice</label> <br>
+                                    
+                              
+                            </div>
+                            <div class="checkbox_genres_right">
+
+                                <label><input type="checkbox" name="types" value="bug"> bug</label><br>
+
+                                 <label><input type="checkbox" name="types" value="ghost"> ghost</label><br>
+
+                                <label><input type="checkbox" name="types" value="steel"> steel</label> <br>           
+                                
+                                <label><input type="checkbox" name="types" value="fire"> fire</label><br>
+
+                                 <label><input type="checkbox" name="types" value="water"> water</label><br>
+
+                                <label><input type="checkbox" name="types" value="grass"> grass</label><br>
+                                <label><input type="checkbox" name="types" value="dragon"> dragon</label><br>
+                                <label><input type="checkbox" name="types" value="ice"> ice</label> <br>
+                                
+
+                               <label><input type="checkbox" name="types" value="fairy"> fairy</label><br>
+                               
+                        </div>
+
+                        </div>
+                        
+            
+                        
+                    </div>
+                    </div>
+    
+                    
+                
+                    
+                    <button class="button_create" type="submit">
+                        Create
+                    </button>
+                
+            </form>
+        </div>
+    
+       
+        </div>
+
+
+        <!-- <button type="submit" class="PokemonCreateForm_topButton">Create Pokémon</button> -->
+        <script  src="/js/create.js"></script>
+    
+</body>
+</html>

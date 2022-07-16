@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "pokemon";
+    src: url(/fonts/PKMN\ RBYGSC.ttf);
+  }
+
+body {
+  margin: 0;
+  background-image: url("/images/grass_background.jpg");
+  font-family: "pokemon", "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.create_container_out {
+  background: #fff;
+  width: 30%;
+  border-radius: 15px;
+  /* margin: auto; */
+}
+
+
+/* *********************************FORM************************ */
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.PokemonCreateForm_topButton {
+  font-family: "pokemon";
+  padding: 5px 80px !important;
+  border: 5px solid #000;
+  background-color: #db3d4b;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 3px 3px 10px 2px rgb(0 0 0 / 75%);
+  font-size: 20px !important;
+}
+
+.checkbox_genres{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+
+}
+
+.create_container{
+    text-align: center;
+}
+
+.checkbox_genres_left {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start; */
+    text-align: left;
+    
+}
+.checkbox_genres_right{
+    text-align: left;
+}
+label{
+    margin: 0;
+}
+
+.attack_form{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    width: 80%;
+}
+
+.attack_form label{
+    text-align: right;
+}
+.attack_form input{
+    width: 60%;
+    margin-left: 1rem;
+}
+.left_side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.button_create{
+    padding: 1rem 1.5rem;
+    color: #fff;
+    font-family: "pokemon";
+    background-color: #db3d4b;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+    /* margin-left: 30px; */
+    font-weight: bolder;
+    margin: 3rem 0 3rem 0;
+    font-size: 1rem;
+    
+}
+
+
+.backButton_container{
+    margin-bottom: 2rem;
+    
+}
