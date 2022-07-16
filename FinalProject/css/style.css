@@ -1,11 +1,11 @@
 @font-face {
   font-family: "pokemon";
-  src: url(/fonts/PKMN\ RBYGSC.ttf);
+  src: url(./fonts/PKMN\ RBYGSC.ttf);
 }
 
 body {
   margin: 0;
-  background-image: url("/images/grass_background.jpg");
+  background-image: url("./images/grass_background.jpg");
   font-family: "pokemon", "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
